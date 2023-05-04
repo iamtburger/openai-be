@@ -9,7 +9,7 @@ dotenv.config();
 app.use(express.json());
 
 var corsOptions = {
-	origin: "http://localhost:5173",
+	origin: process.env.FE_URL,
 	optionsSuccessStatus: 200,
 	allowedHeaders: ["Content-Type"],
 	methods: ["POST"],
